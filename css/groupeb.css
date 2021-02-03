@@ -4,6 +4,23 @@ padding:0px;
 margin:0px;
 }
 
+#bandeau{
+
+width: 980px;
+margin-left: auto;
+margin-right: auto;
+
+}
+#banniere
+{
+background-image: url(../img/banniere_mouche.jpg);
+background-color: #4FB234; 
+width: 645px;
+height: 200px; 
+float: right;
+
+
+}
 #listmenu {
 position:absolute;
 top:200px;
