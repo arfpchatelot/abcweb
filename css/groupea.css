@@ -15,6 +15,7 @@ position: relative;
     border-bottom: 2px solid #008000;
     top:200px;
     position: absolute;
+    z-index: 1000;
 }
 #listmenu ul {
 
@@ -102,12 +103,61 @@ width: 100%;
 
 }
 
+#main 
+{
+    background-color: #663333;
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+#nav2
+{   
+    padding-top: 200px;
+    background-color: #663333;
+    position:static;
+    width: 200px;
+    height: 100%;
+    float: left;
+}
+
+
+#nav2  li {
+    padding-left: 20px;
+    list-style: none;
+   
+}
+aside
+{
+float:right;
+
+}
+#nav2 a:link
+{
+    text-decoration: none;
+color: white;
+font-size: 1.4em;
+}
 #banniere
 {
     width: 635px;
     height: 200px;
     float:right;
     background-image: url(../img/banniere_mouche.jpg);
+
+}
+
+section 
+{
+margin-left: 200px;
+background-color:  #CBD888;
+} 
+
+footer
+ {
+     padding: 30px;
+     background-color: #006633;
 
 }
 
