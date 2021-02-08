@@ -148,13 +148,13 @@ font-size: 1.4em;
 
 }
 
-section 
+#main section 
 {
 margin-left: 200px;
 background-color:  #CBD888;
 } 
 
-footer
+#main footer
  {
      padding: 30px;
      background-color: #006633;
@@ -165,4 +165,57 @@ footer
  margin-left: 160px;
     color : whitesmoke;
     text-shadow: 4px 4px 5px black;
+}
+#main article {
+    text-align: justify;
+    padding: 50px 20px;
+}
+#main aside 
+{
+background:linear-gradient(to bottom,#663333,#330e0e );
+margin-left: 15px;
+margin-bottom: 15px;
+padding: 15px 10px;
+border-radius:12px;
+-moz-border-radius: (12px);
+-webkit-border-radius: (12px);
+-ms-border-radius: (12px);
+-o-border-radius: (12px);
+}
+#main aside a:link
+{
+color: white;
+text-decoration: none;
+/*-webkit-text-emphasis: triangle blue;*/
+}
+#main aside a:hover
+{
+text-emphasis-style:1.2em ;
+text-decoration: underline;
+}
+#main aside a:active
+{
+    color: yellowgreen;
+
+}
+#main aside a:visited
+{
+color: rgb(107, 88, 85);
+
+}
+img[title="ornans"]
+{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 5px;
+ transition-property: all;
+ transition-duration: 500ms;
+}
+img[title="ornans"]:hover
+{
+ transform:rotate(360deg) scale(1.5);
+ transform-origin:50% 50%;
+ transition-property: all;
+ transition-duration: 500ms;
+ transition-timing-function: ease-in;
 }
