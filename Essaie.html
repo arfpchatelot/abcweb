@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <style>
+        .boite {
+            width: 5cm;
+            height: 5cm;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            border: 3px solid black;
+            background-color: whitesmoke;
+            position: relative;
+            animation: couleurs 10s cubic-bezier(0,1.03,1,-0.06) infinite alternate;
+        }
+
+        @keyframes couleurs {
+            0% {
+                background-color: purple;
+                left: -300px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: blue;
+                left: 300px;
+                top: 0px;
+                border-radius: 25%;
+            }
+
+            50% {
+                background-color: green;
+                left: 300px;
+                top: 300px;
+                border-radius: 50%;
+            }
+
+            75% {
+                background-color: yellow;
+                left: -300px;
+                top: 300px;
+            }
+
+            100% {
+                background-color: red;
+                left: -300px;
+                top: 0px;
+            }
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="boite"></div>
+</body>
+
+</html>
