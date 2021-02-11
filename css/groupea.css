@@ -210,14 +210,16 @@ img[title="ornans"]
     float: left;
     margin-right: 15px;
     margin-bottom: 5px;
- transition-property: all;
- transition-duration: 500ms;
+    box-shadow: 5px 5px 10px #353a21;
+    transition-property:all;
+    transition-duration:2s;
+    transition-timing-function: cubic-bezier(0,1.12,1,.09);
 }
 img[title="ornans"]:hover
 {
- transform:rotate(360deg) scale(1.5);
+ transform:scale(1.5);
  transform-origin:50% 50%;
- transition-property: all;
- transition-duration: 500ms;
- transition-timing-function: ease-in;
+ transition-property:all;
+ transition-duration: 2s;
+ transition-timing-function: cubic-bezier(0,1.12,1,.09);
 }
