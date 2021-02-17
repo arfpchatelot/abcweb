@@ -3,15 +3,16 @@
     background-color: #333;
     color: #fff;
     padding: 20px;
+    border-radius: 12px;
 }
 body
 {
     padding: 10px 0px 0px 0px;
     margin: 0px;
-    display:grid;
+  display:grid;
     
-grid-template-columns:repeat(6,1fr);
-grid-template-rows:repeat(4,auto);
+grid-template-columns: repeat(6,1fr); 
+grid-template-rows: repeat(4, minmax(200px,auto));
 gap: 20px;
 }
 .menu
@@ -22,19 +23,25 @@ grid-column: 2/span 5;
 
 }
 .fil { 
-grid-column:1/span 6;
-
+grid-column-start:1;
+grid-column-end:-1;
+grid-row: 2/3;
 }
 
 .main
 {
-  grid-column: span 4;  
+  grid-column: span 4;
+  
+  display: grid;
+  grid-template-columns:repeat(2,1fr);
+  grid-template-rows: repeat(2,minmax(50px,auto));
+  gap: 20px;
 }
 .sidebar 
 {
+margin-right:20px;
 grid-column:5/span 2;
 }
 .footer
 {grid-column: 1/-1;
-
 }
