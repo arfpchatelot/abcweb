@@ -41,11 +41,7 @@ function afficheheure()
     (sec<10)?chaineheure+=':0'+sec:chaineheure+=':'+sec;
 
     document.getElementById('monheure').value=chaineheure;
-    setTimeout(function() {afficheheure();
-        
-    }, 1000);
-    
-
+    setTimeout(function() {afficheheure();}, 1000);
 }
 var objetboutonheure=document.querySelector('#btnheure');
-objetboutonheure.addEventListener('click',function(){ afficheheure();});
+objetboutonheure.addEventListener('click',afficheheure);

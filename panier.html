@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice panier</title>
+    <style>
+        body {
+            background-color: rgb(215, 213, 255);
+        }
+
+        fieldset {
+           
+            width: 80%;
+            background-color: rgb(143, 188, 143);
+            border: 3px solid white;
+            border-radius: 12px;
+        }
+
+        legend {
+            text-shadow: 3px 3px 5px rgb(32, 3, 3);
+            font-size: 1.8em;
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+
+        }
+
+        input[type="text"] {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        #panier
+        {
+            padding-right: 140px;
+            text-align: right;
+        }
+        #total {
+            text-align: right;
+            padding-right: 140px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <fieldset>
+        <legend>Gestion pannier 2 produits</legend>
+
+        <div id="panier">
+            <label for="qte1">Qté 1</label>
+            <input type="number" step="0.01" name="qte1" id="qte1" maxlength="10" value="0" />
+            <label for="prix1">Prix unitaire 1</label>
+            <input type="number" step="0.01" name="prix1" id="prix1" maxlength="10" value="1" />
+            <label for="ca1">CA produit1</label>
+            <input type="number" step="0.01" name="ca1" id="ca1" maxlength="10" value="0" readonly="readonly" /> <br>
+            <br>
+            <label for="qte1">Qté 2</label>
+            <input type="number" step="0.01" name="qte2" id="qte2" maxlength="10" value="0" />
+            <label for="prix2">Prix unitaire 2</label>
+            <input type="number" step="0.01" name="prix2" id="prix2" maxlength="10" value="1" />
+            <label for="ca2">CA produit2</label>
+            <input type="number" step="0.01" name="ca2" id="ca2" maxlength="10" value="0" readonly="readonly" />
+        </div>
+        <hr>
+        <div id="total"><label for="ca">C.A.</label> <input type="number" step="0.01" name="ca" id="ca" maxlength="10"
+                readonly="readonly">
+        </div>
+
+    </fieldset>
+
+
+</body>
+
+</html>
