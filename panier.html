@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercice panier</title>
+    
     <style>
         body {
             background-color: rgb(215, 213, 255);
@@ -31,9 +32,15 @@
 
         }
 
-        input[type="text"] {
+        input[type="number"] {
             margin-left: 10px;
             margin-right: 10px;
+            -webkit-appearance:textfield;
+            -moz-appearance:textfield;
+            -ms-appearance:none;
+            appearance:textfield;
+
+
         }
         #panier
         {
@@ -44,13 +51,18 @@
             text-align: right;
             padding-right: 140px;
         }
-    </style>
+        input[readonly="readonly"]
+        {
+            background-color:lightgray;
 
+        }
+    </style>
+<script src="js/paniera.js" async></script>
 </head>
 
 <body>
     <fieldset>
-        <legend>Gestion pannier 2 produits</legend>
+        <legend>Gestion panier 2 produits</legend>
 
         <div id="panier">
             <label for="qte1">Qté 1</label>
@@ -65,11 +77,11 @@
             <label for="prix2">Prix unitaire 2</label>
             <input type="number" step="0.01" name="prix2" id="prix2" maxlength="10" value="1" />
             <label for="ca2">CA produit2</label>
-            <input type="number" step="0.01" name="ca2" id="ca2" maxlength="10" value="0" readonly="readonly" />
+            <input type="number" step="0.01" name="ca2" id="ca2" maxlength="10" value="0" readonly="readonly"  />
         </div>
         <hr>
         <div id="total"><label for="ca">C.A.</label> <input type="number" step="0.01" name="ca" id="ca" maxlength="10"
-                readonly="readonly">
+                readonly="readonly" value=0>
         </div>
 
     </fieldset>
