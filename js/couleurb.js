@@ -76,3 +76,68 @@ objtxtbleu.addEventListener("blur", function () {
         document.body.style.backgroundColor = couleurchange();
     };
 });
+/*
+var objbtnrouge=document.querySelector("#btnrouge");
+objbtnrouge.addEventListener("click", 
+function()
+{
+document.querySelector("#txtrouge").value='FF';
+
+document.querySelector("#txtvert").value='00';
+document.querySelector("#txtbleu").value='00';
+document.body.style.background=couleurchange();
+});
+*/
+
+ testbtn=document.querySelectorAll('input[type=button]');
+for (var item of testbtn){
+item.addEventListener("click",
+function () { switch (this.value) {
+        case "Rouge":
+            document.querySelector("#txtrouge").value='FF';
+
+document.querySelector("#txtvert").value='00';
+document.querySelector("#txtbleu").value='00';
+document.body.style.background=couleurchange();
+        break;
+        case "Vert":
+document.querySelector("#txtrouge").value='00';
+document.querySelector("#txtvert").value='FF';
+document.querySelector("#txtbleu").value='00';
+document.body.style.background=couleurchange();
+        break;
+            
+        case "Bleu":
+document.querySelector("#txtrouge").value='00';
+document.querySelector("#txtvert").value='00';
+document.querySelector("#txtbleu").value='FF';
+document.body.style.background=couleurchange();
+                
+        break;}
+    
+    ;});
+
+} 
+
+
+/*
+var objbtnvert=document.querySelector("#btnvert");
+objbtnvert.addEventListener("click", 
+function()
+{
+document.querySelector("#txtrouge").value='00';
+
+document.querySelector("#txtvert").value='FF';
+document.querySelector("#txtbleu").value='00';
+document.body.style.background=couleurchange();
+});
+var objbtnbleu=document.querySelector("#btnbleu");
+objbtnbleu.addEventListener("click", 
+function()
+{
+document.querySelector("#txtrouge").value='00';
+
+document.querySelector("#txtvert").value='00';
+document.querySelector("#txtbleu").value='FF';
+document.body.style.background=couleurchange();
+});*/
