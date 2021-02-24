@@ -1,0 +1,46 @@
+header { text-align: center;}
+
+main {
+width: 500px;
+margin-left: auto;
+margin-right: auto;
+background-color: #f5d9f4;
+border-radius:12px;
+border:1px solid #ff00ff ;
+padding:50px;
+
+
+}
+
+fieldset{
+    color:whitesmoke;
+border-radius: 12px; 
+}
+legend
+{
+  color: whitesmoke;
+  /*  font-variant: small-caps;*/
+    text-transform: capitalize;
+    font-size: 1.5em;
+    text-shadow:5px 5px 7px black;
+}
+label {
+    display:inline-block;
+    color:#000000;
+    width:50px;
+    text-align: right;
+    margin-right: 15px;
+}
+
+#lbldate {
+width: 50%!important;
+text-align:left;
+}
+#anniv{
+  
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    gap:10px;
+}
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription AstroCoeur</title>
+    <link rel="stylesheet" href="css/astro.css" />
+    <script src="js/astrosource.js" async>  </script>
+</head>
+<body>
+    <header><h1>Inscription sur  notre site de rencontre Astro-Coeur </h1>
+                <h2>Formulaire d'inscription</h2>
+                <nav>Menu</nav>
+    </header>
+    <main>
+
+<form action="Accueil.html" method="GET" enctype="text/plain" >
+<fieldset><legend>Inscription Astro-Coeur</legend>
+<label for="nomUtilisateur">Nom:</label><input type="text" id="nomUtilisateur" name="nomUtilisateur" maxlength="50" size="20" /> <br><br> 
+<label for="PrenomUtilisateur">Prenom:</label><input type="text" id="prenomUtilisateur" name="prenom Utilisateur" maxlength="50" size="20" /><br><br> 
+<label for="jour" id="lbldate">Date de naissance:</label><br><br>
+<div id="anniv"> 
+<select name="jour" id="jour" >
+<option value="0">jour anniv.</option>
+</select>
+<select  name="mois" id="mois">
+    <option value="0">mois anniv.</option>
+</select>
+<select name="annee" id="annee">
+    <option value="0">année anniv.</option>
+
+</select>
+</div>  
+<br /><br />
+<input type="text" name="pseudo" id="pseudo" readonly="true" placeholder="pseudo"  > 
+<br /> <br /> 
+<textarea name="commentaire" id="commentaire" cols="30" rows="10" maxlength="200" placeholder="Votre commentaire ici"></textarea> <br /><br /> 
+
+
+<input type="submit" value="Confirmer l'inscription" >
+<input type="reset" value="Remise à zero">
+
+
+
+
+
+</fieldset>
+
+
+
+</form>
+
+    </main>
+<footer><p> © copyright ABC dev 20_10 </p> </footer>
+
+</body>
+</html>
