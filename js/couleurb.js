@@ -92,7 +92,7 @@ document.body.style.background=couleurchange();
  testbtn=document.querySelectorAll('input[type=button]');
 for (var item of testbtn){
 item.addEventListener("click",
-function () { switch (this.value) {
+function () { switch (item.value) {
         case "Rouge":
             document.querySelector("#txtrouge").value='FF';
 
@@ -113,7 +113,13 @@ document.querySelector("#txtvert").value='00';
 document.querySelector("#txtbleu").value='FF';
 document.body.style.background=couleurchange();
                 
-        break;}
+        break;
+    default :
+    console.log("bouton autre...");
+    break;
+
+
+    }
     
     ;});
 
