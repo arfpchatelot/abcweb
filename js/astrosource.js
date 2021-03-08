@@ -148,8 +148,75 @@ document.querySelector("#nomUtilisateur").addEventListener("blur", function()
 
 
 } );
+document.querySelector("#jour").addEventListener("change",function(){
+    if(formOK()==true)
+    {
+
+    document.querySelector("#pseudo").value=calculerPseudo();
+    document.querySelector("#valider").disabled=false;
+        }
+        else {
+
+            alert("Veuillez remplir les zones obligatoires!...");
+        }
+
+}
+
+);
+
+document.querySelector("#mois").addEventListener("change",function(){
+    if(formOK()==true)
+    {
+
+    document.querySelector("#pseudo").value=calculerPseudo();
+    document.querySelector("#valider").disabled=false;
+        }
+        else {
+
+            alert("Veuillez remplir les zones obligatoires!...");
+        }
+
+}
+
+);
+
+document.querySelector("#annee").addEventListener("change",function(){
+    if(formOK()==true)
+    {
+
+    document.querySelector("#pseudo").value=calculerPseudo();
+    document.querySelector("#valider").disabled=false;
+        }
+        else {
+
+            alert("Veuillez remplir les zones obligatoires!...");
+        }
+
+}
+
+);
+
+function newCookie(cle, valeur)
+{
+  var datejour=new Date();
+  var date_exp= new Date(datejour.getFullYear(),datejour.getMonth(),datejour.getDate(),datejour.getHours()+2,datejour.getMinutes(), datejour.getSeconds());
+
+  console.log(date_exp.toGMTString());
+    
+  document.cookie = cle + "=" + valeur + "; expires=" + date_exp.toGMTString();
+} 
+
+
+function  inscription()
+{
+
+
+document.querySelector("#form1").submit();
+
+}
+document.querySelector("#valider").addEventListener("click",inscription);
 
 
 
-
+newCookie("nom", "toto");
 
