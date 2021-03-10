@@ -201,15 +201,20 @@ function newCookie(cle, valeur)
   var datejour=new Date();
   var date_exp= new Date(datejour.getFullYear(),datejour.getMonth(),datejour.getDate(),datejour.getHours()+2,datejour.getMinutes(), datejour.getSeconds());
 
-  console.log(date_exp.toGMTString());
+  /*console.log(date_exp.toGMTString());*/
     
-  document.cookie = cle + "=" + valeur + "; expires=" + date_exp.toGMTString();
+  document.cookie = cle + "=" + valeur + ";expires=" + date_exp.toGMTString()+"; SameSite=lax";
 } 
 
 
 function  inscription()
 {
+newCookie("nomUtilisateur", document.querySelector("#nomUtilisateur").value);
+newCookie("prenomUtilisateur", document.querySelector("#prenomUtilisateur").value);
+let datenaissance=new Date(document.getElementById("annee").value,document.getElementById("mois").value, document.getElementById("jour").value);
+newCookie("date_Naissance",datenaissance);
 
+alert("test");
 
 document.querySelector("#form1").submit();
 
@@ -217,6 +222,5 @@ document.querySelector("#form1").submit();
 document.querySelector("#valider").addEventListener("click",inscription);
 
 
-
-newCookie("nom", "toto");
+;
 
